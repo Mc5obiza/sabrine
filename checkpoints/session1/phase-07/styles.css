@@ -1,0 +1,66 @@
+/* ---------- Theme: change these values to restyle the whole site ---------- */
+html {
+  --color-primary: #2563eb;
+  --color-on-primary: #ffffff;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --color-background: #ffffff;
+  --color-surface: #f3f4f6;
+  --color-border: #d1d5db;
+  --font-main: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* ---------- Base: whole elements ---------- */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+.brand, .nav-link, .button {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  color: var(--color-muted);
+}
+
+#price {
+  font-size: 0.9em;
+}
+
+/* ---------- Sections and feature cards ---------- */
+.section-title {
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+/* ---------- Video and audio ---------- */
+.demo-caption {
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  color: var(--color-muted);
+}

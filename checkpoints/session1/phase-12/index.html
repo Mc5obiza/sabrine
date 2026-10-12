@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Student Assistant</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Header: logo and navigation links -->
+    <header class="navbar" id="top">
+      <a class="brand" href="index.html" title="Go to the home page">
+        <img class="brand-logo" src="images/logo.svg" alt="AI Student Assistant logo" width="40" height="40">
+        AI Student Assistant
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="assistant.html">Assistant</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+      </nav>
+    </header>
+
+    <!-- Main content of the page -->
+    <main>
+      <!-- Hero: the first thing visitors see -->
+      <section class="hero">
+        <h1 class="hero-title">Study smarter with AI</h1>
+        <p class="hero-text">Ask questions. Get clear answers.<br>Plan your week in minutes.</p>
+        <p id="price">Price: <del>$20 per month</del> <b>free</b> for <i>bootcamp students</i></p>
+        <div class="hero-actions">
+          <a class="button" href="assistant.html"><i class="fa fa-comments"></i> Ask a question</a>
+          <a class="button button--secondary" href="#features">See features</a>
+        </div>
+      </section>
+
+      <!-- Features: what the assistant can do -->
+      <section class="section" id="features">
+        <h2 class="section-title">What it can do</h2>
+        <div class="feature-list">
+          <article class="feature-card">
+            <i class="fa fa-lightbulb-o feature-icon"></i>
+            <h3 class="feature-title">Explain any topic</h3>
+            <p>Get simple explanations of hard lessons, step by step.</p>
+          </article>
+          <article class="feature-card">
+            <i class="fa fa-calendar feature-icon"></i>
+            <h3 class="feature-title">Plan your week</h3>
+            <p>Organize your study sessions in a clear weekly table.</p>
+          </article>
+          <article class="feature-card">
+            <i class="fa fa-check-square-o feature-icon"></i>
+            <h3 class="feature-title">Practice for exams</h3>
+            <p>Ask for quiz questions and check your answers.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- How it works: three simple steps -->
+      <section class="section" id="how-it-works">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps">
+          <li>Choose a subject.</li>
+          <li>Type your question and press Send.</li>
+          <li>Read the answer and ask a follow-up question.</li>
+        </ol>
+      </section>
+
+      <!-- Glossary: AI words explained -->
+      <section class="section" id="glossary">
+        <h2 class="section-title">AI words to know</h2>
+        <dl class="glossary">
+          <dt>Model</dt>
+          <dd>A program that learned patterns from a lot of data.</dd>
+          <dt>Prompt</dt>
+          <dd>The question or instruction you give to the AI.</dd>
+          <dt>Token</dt>
+          <dd>A small piece of text the AI reads, like a short word.</dd>
+        </dl>
+      </section>
+
+      <!-- Demo: video and audio files -->
+      <section class="section" id="demo">
+        <h2 class="section-title">See and hear it</h2>
+        <figure class="demo-figure">
+          <video class="demo-video" width="320" height="180" controls>
+            <source src="media/demo.mp4" type="video/mp4">
+            Your browser cannot play this video.
+          </video>
+          <figcaption class="demo-caption">A sample clip. Later, replace it with a recording of your app.</figcaption>
+        </figure>
+        <p>The sound you hear when an answer is ready:</p>
+        <audio controls>
+          <source src="media/chime.wav" type="audio/wav">
+          Your browser cannot play this audio.
+        </audio>
+      </section>
+
+      <!-- Intro video embedded from YouTube -->
+      <section class="section" id="intro">
+        <h2 class="section-title">Watch: what is a neural network?</h2>
+        <iframe class="intro-video" width="320" height="180" src="https://www.youtube.com/embed/aircAruvnKk" title="But what is a neural network?" allowfullscreen></iframe>
+      </section>
+    </main>
+
+    <!-- Footer: information about the site -->
+    <footer class="footer">
+      <p>Made by the AI Development Bootcamp students.<br>Built with HTML and CSS.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Learn more about AI</a> | <a href="#top">Back to top</a></p>
+      <p><small>For learning purposes only.</small></p>
+    </footer>
+  </body>
+</html>

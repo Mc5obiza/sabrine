@@ -1,0 +1,331 @@
+html {
+  font-size: 16px;
+}
+
+/* ---------- Base: whole elements ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  color: #2563eb;
+}
+
+.brand, .nav-link, .button {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar > .brand {
+  color: #1f2937;
+}
+
+.brand-logo {
+  margin-right: 8px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  padding: 8px 16px;
+}
+
+.nav-link:hover {
+  border-radius: 8px;
+  background-color: #f3f4f6;
+}
+
+.nav-link:active {
+  color: #1e40af;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 32px 16px;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+
+#price {
+  font-size: 0.9em;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 16px;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.button--secondary {
+  background-color: #ffffff;
+  color: #2563eb;
+}
+
+.button:hover {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+.floating-chat {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  border-radius: 50px;
+}
+
+/* ---------- Sections and feature cards ---------- */
+.section {
+  padding: 32px 16px;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.feature-card {
+  justify-self: center;
+  position: relative;
+  width: 250px;
+  margin: 8px;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.feature-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ---------- Video and audio ---------- */
+.demo-figure {
+  margin: 0;
+}
+
+.demo-caption {
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 32px 16px;
+  border-top: 1px solid #d1d5db;
+  text-align: center;
+  color: #6b7280;
+}
+
+.footer a:link {
+  color: #2563eb;
+}
+
+.footer a:visited {
+  color: #7c3aed;
+}
+
+.footer a:hover {
+  color: #1e40af;
+}
+
+.footer a:active {
+  color: #1f2937;
+}
+
+/* ---------- Forms ---------- */
+.form-label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.form-field {
+  display: block;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.form-label + .form-field {
+  margin-top: 8px;
+}
+
+.form-field ~ .button {
+  margin: 16px 0;
+}
+
+/* ---------- Planner table ---------- */
+.planner-table {
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+td {
+  background-color: #f3f4f6;
+}
+
+/* ---------- Chat page ---------- */
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.chat-row {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.chat-row--user {
+  justify-content: flex-end;
+}
+
+.chat-row--ai {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.chat-bubble--user {
+  margin-left: 32px;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.chat-bubble--ai {
+  margin-right: 32px;
+  background-color: #f3f4f6;
+}
+
+.chat-avatar {
+  margin: 0 8px;
+  font-size: 1.5rem;
+  color: #6b7280;
+}
+
+.chat-row--user .chat-avatar {
+  color: #2563eb;
+}
+
+.chat-tips {
+  margin-top: 32px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+}
+
+.chat-tips li {
+  margin-bottom: 8px;
+}
+
+/* ---------- Wider screens: tablets and up ---------- */
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .chat-page {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .chat {
+    width: 70%;
+  }
+  .chat-tips {
+    width: 30%;
+    margin-top: 0;
+    margin-left: 32px;
+  }
+  .intro-video {
+    width: 560px;
+    height: 315px;
+  }
+  .feature-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .feature-card {
+    width: auto;
+    justify-self: stretch;
+  }
+  .feature-card--main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

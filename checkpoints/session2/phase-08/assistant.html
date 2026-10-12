@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant | AI Student Assistant</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- Header: Bootstrap navbar (snippet adapted from the Bootstrap docs) -->
+    <header class="navbar navbar-expand-md bg-body-tertiary" id="top">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html" title="Go to the home page">
+          <img class="brand-logo" src="images/logo.svg" alt="AI Student Assistant logo" width="40" height="40">
+          AI Student Assistant
+        </a>
+        <nav class="navbar-nav nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="assistant.html">Assistant</a>
+          <a class="nav-link" href="planner.html">Planner</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content: a Bootstrap container with one row and two columns -->
+    <main class="chat-page container my-4">
+      <div class="row g-4">
+        <section class="chat col-md-8">
+          <h1 class="page-title">Ask the assistant</h1>
+        </section>
+
+        <!-- Sidebar: tips, a warning alert and a progress bar -->
+        <aside class="chat-tips col-md-4">
+          <h2 class="tips-title">Tips for good questions</h2>
+          <ul class="tips-list">
+            <li>Name the topic and your level.</li>
+            <li>Ask for an example.</li>
+            <li>Ask it to explain "like I am 12 years old".</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer: information about the site -->
+    <footer class="footer container">
+      <p>Made by the AI Development Bootcamp students.<br>Built with HTML and CSS.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Learn more about AI</a> | <a href="#top">Back to top</a></p>
+      <p><small>For learning purposes only.</small></p>
+    </footer>
+  </body>
+</html>

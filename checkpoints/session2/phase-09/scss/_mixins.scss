@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+// Mixin without arguments: center the children with flexbox
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin with an argument: a rounded box with a border and a background
+@mixin box($background) {
+  padding: $space-m;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  background-color: $background;
+}

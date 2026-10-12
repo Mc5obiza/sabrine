@@ -1,0 +1,354 @@
+// Theme: change these values to restyle the whole site
+$color-primary: #2563eb;
+$color-primary-dark: #1e40af;
+$color-visited: #7c3aed;
+$color-on-primary: #ffffff;
+$color-text: #1f2937;
+$color-muted: #6b7280;
+$color-background: #ffffff;
+$color-surface: #f3f4f6;
+$color-border: #d1d5db;
+$font-main: Arial, Helvetica, sans-serif;
+$space-s: 8px;
+$space-m: 16px;
+$space-l: 32px;
+$radius: 8px;
+
+html {
+  font-size: 16px;
+}
+
+/* ---------- Base: whole elements ---------- */
+body {
+  margin: 0;
+  font-family: $font-main;
+  color: $color-text;
+  background-color: $color-background;
+  line-height: 1.5;
+}
+
+a {
+  color: $color-primary;
+}
+
+.brand, .nav-link, .button {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $space-m;
+  border-bottom: 1px solid $color-border;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar > .brand {
+  color: $color-text;
+}
+
+.brand-logo {
+  margin-right: $space-s;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  padding: $space-s $space-m;
+}
+
+.nav-link:hover {
+  border-radius: $radius;
+  background-color: $color-surface;
+}
+
+.nav-link:active {
+  color: $color-primary-dark;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: $space-l $space-m;
+  background-color: $color-surface;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  color: $color-muted;
+}
+
+#price {
+  font-size: 0.9em;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  margin: $space-s;
+  padding: $space-s $space-m;
+  border: 2px solid $color-primary;
+  border-radius: $radius;
+  background-color: $color-primary;
+  color: $color-on-primary;
+  font-family: $font-main;
+  font-size: 1rem;
+}
+
+.button--secondary {
+  background-color: $color-background;
+  color: $color-primary;
+}
+
+.button:hover {
+  background-color: $color-primary-dark;
+  color: $color-on-primary;
+}
+
+.floating-chat {
+  position: fixed;
+  right: $space-m;
+  bottom: $space-m;
+  border-radius: 50px;
+}
+
+/* ---------- Sections and feature cards ---------- */
+.section {
+  padding: $space-l $space-m;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.feature-card {
+  justify-self: center;
+  position: relative;
+  width: 250px;
+  margin: $space-s;
+  padding: $space-m;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  background-color: $color-surface;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: $color-primary;
+}
+
+.feature-badge {
+  position: absolute;
+  top: $space-s;
+  right: $space-s;
+  padding: 2px $space-s;
+  border-radius: $radius;
+  background-color: $color-primary;
+  color: $color-on-primary;
+  font-weight: bold;
+}
+
+/* ---------- Video and audio ---------- */
+.demo-figure {
+  margin: 0;
+}
+
+.demo-caption {
+  font-style: italic;
+  color: $color-muted;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: $space-l $space-m;
+  border-top: 1px solid $color-border;
+  text-align: center;
+  color: $color-muted;
+}
+
+.footer a:link {
+  color: $color-primary;
+}
+
+.footer a:visited {
+  color: $color-visited;
+}
+
+.footer a:hover {
+  color: $color-primary-dark;
+}
+
+.footer a:active {
+  color: $color-text;
+}
+
+/* ---------- Forms ---------- */
+.form-label {
+  display: block;
+  margin-top: $space-m;
+  font-weight: bold;
+}
+
+.form-field {
+  display: block;
+  padding: $space-s;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  font-family: $font-main;
+  font-size: 1rem;
+}
+
+.form-label + .form-field {
+  margin-top: $space-s;
+}
+
+.form-field ~ .button {
+  margin: $space-m 0;
+}
+
+/* ---------- Planner table ---------- */
+.planner-table {
+  width: 100%;
+}
+
+th, td {
+  padding: $space-s;
+  text-align: left;
+}
+
+th {
+  background-color: $color-primary;
+  color: $color-on-primary;
+}
+
+td {
+  background-color: $color-surface;
+}
+
+/* ---------- Chat page ---------- */
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  padding: $space-m;
+}
+
+.chat-row {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: $space-m;
+}
+
+.chat-row--user {
+  justify-content: flex-end;
+}
+
+.chat-row--ai {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  padding: $space-s $space-m;
+  border-radius: $radius;
+}
+
+.chat-bubble--user {
+  margin-left: $space-l;
+  background-color: $color-primary;
+  color: $color-on-primary;
+}
+
+.chat-bubble--ai {
+  margin-right: $space-l;
+  background-color: $color-surface;
+}
+
+.chat-avatar {
+  margin: 0 $space-s;
+  font-size: 1.5rem;
+  color: $color-muted;
+}
+
+.chat-row--user .chat-avatar {
+  color: $color-primary;
+}
+
+.chat-tips {
+  margin-top: $space-l;
+  padding: $space-m;
+  border-radius: $radius;
+  background-color: $color-surface;
+}
+
+.chat-tips li {
+  margin-bottom: $space-s;
+}
+
+/* ---------- Wider screens: tablets and up ---------- */
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .chat-page {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .chat {
+    width: 70%;
+  }
+
+  .chat-tips {
+    width: 30%;
+    margin-top: 0;
+    margin-left: $space-l;
+  }
+
+  .intro-video {
+    width: 560px;
+    height: 315px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .feature-card {
+    width: auto;
+    justify-self: stretch;
+  }
+
+  .feature-card--main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

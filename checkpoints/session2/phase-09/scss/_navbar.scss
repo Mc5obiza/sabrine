@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Navbar: one parent block, with its children nested inside
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $space-m;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-background;
+
+  > .brand {
+    display: flex;
+    align-items: center;
+    color: $color-text;
+  }
+
+  .brand-logo {
+    margin-right: $space-s;
+  }
+
+  .nav-links {
+    @include flex-center;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: $space-s $space-m;
+
+    &:hover {
+      border-radius: $radius;
+      background-color: $color-surface;
+    }
+
+    &:active {
+      color: $color-primary-dark;
+    }
+  }
+}
